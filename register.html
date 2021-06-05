@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Register with us</title>
+</head>
+
+<body>
+    <!-- <form>
+        <span>Name:</span>
+        <input type="text" placeholder="Enter Name">
+    </form> -->
+    <div class="popup" id="popup-1">
+        <div class="content_reg">
+            <div class="close-btn" onclick="togglePopup()">
+                <a href="index.html" id="vanish">×</a></div>
+
+            <div class="input-field"><input placeholder="Name" class="validate"></div>
+            <div class="input-field"><input placeholder="Phone" class="validate"></div>
+            <div class="input-field"><input placeholder="Email" class="validate"></div>
+            <div class="input-field"><input placeholder="Password" class="validate"></div>
+            <div class="input-field"><input placeholder="confirm Password" class="validate"></div>
+            <button class="second-button">Submit</button>
+        </div>
+    </div>
+
+
+    <script>
+        function togglePopup() {
+        document.getElementById("popup-1")
+         .classList.toggle("active");
+       }
+       </script>
+</body>
+
+</html>

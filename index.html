@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_front.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+    <title>Online Quiz System</title>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="img/logo.png" alt="Durbin"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <!-- <div class="barger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> -->
+
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Online Quiz application</p>
+                <p class="text-small">Before test your skill register with us and this tricky quizes! Enhance Your
+                    knowledge</p>
+                <div class="buttions">
+                    <!-- <button class="btn">Signup</button> -->
+                    <div class="popup" id="popup-1">
+                        <div class="content">
+                         <div class="close-btn" onclick="togglePopup()">
+                          ×</div>
+                          
+                     <h1>Sign in</h1> 
+                       <div class="input-field"><input placeholder="Email" type="text" class="validate"></div>
+                       <div class="input-field"><input placeholder="Password" type="password" class="validate"></div>
+                         <button class="second-button"><a href="quiz.html" id="reg">Sign in</a></button>
+                         <p>Don't have an account? <a href="register.html" id="reg">Register</a></p>
+                           
+                          
+                        </div>
+                       </div>
+                       <button onclick="togglePopup()" class="first-button">Click to Sign in</button>
+                </div>
+
+            </div>
+            <div class="secondHalf">
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function togglePopup() {
+        document.getElementById("popup-1")
+         .classList.toggle("active");
+       }
+       </script>
+
+</body>
+
+</html>
